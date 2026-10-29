@@ -4,7 +4,7 @@ from dni_utils import calcula_letra_dni
 app = FastAPI()
 
 @app.post("/dni/{dni}")
-def calcula_letra(dni):
+def calcula_letra(dni:str):
     if dni is None or len(dni) != 8:
         raise HTTPException(status_code=400, detail="The DNI provided is not valid")
 
@@ -16,7 +16,7 @@ def calcula_letra(dni):
     return {"letra": letra}
 
 @app.get("/dni/validar")
-def valida_dni(dni):
+def valida_dni(dni:str):
     if dni is None or len(dni) != 9:
         raise HTTPException(status_code=400, detail="The DNI provided is not valid")
 

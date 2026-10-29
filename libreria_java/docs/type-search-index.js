@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html","k":"18"},{"p":"src.main.java.com.example","l":"DniUtils"}];updateSearchResults();
