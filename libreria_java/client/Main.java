@@ -2,7 +2,7 @@ import src.main.java.com.example.DniUtils;
 
 public class Main {
     private static final String DNI_NUMERO = "00000000";
-    private static final String DNI_LETRA = "T";
+    private static final String DNI_LETRA = "t";
 
     static void main(String[] args) {
         System.out.println("Prueba positiva:\nValor esperado: T\tValor obtenido: " + DniUtils.calcularLetra(Integer.parseInt(DNI_NUMERO)));

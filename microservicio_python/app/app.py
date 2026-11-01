@@ -29,7 +29,7 @@ def valida_dni(dni:str):
     dni_letra = dni[-1]
     letra_calculada = calcula_letra_dni(dni_numero_int)
 
-    if letra_calculada == dni_letra:
+    if letra_calculada == dni_letra.capitalize():
         return {"valido": True}
     else:
         return {"valido": False}

@@ -51,6 +51,6 @@ public class DniUtils {
         }
         char dni_letra = dni.charAt(8);
 
-        return dni_letra == calcularLetra(dni_numero);
+        return Character.toUpperCase(dni_letra) == calcularLetra(dni_numero);
     }
 }
