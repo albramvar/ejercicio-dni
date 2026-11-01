@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from dni_utils import calcula_letra_dni
+from .dni_utils import calcula_letra_dni
 
 app = FastAPI()
 
